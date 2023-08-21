@@ -1,0 +1,234 @@
+<script>
+$(document).ready(function() {
+    var circle = $(".circle");
+    
+    $(window).on("scroll", function() {
+      if (isElementInViewport(circle) && !circle.hasClass("animated")) {
+        circle.circleProgress({
+          startAngle: -Math.PI / 2,
+          reverse: true,
+          value: 0.76,
+          size: 150,
+          lineCap: 'round',
+          thickness: 15,
+          fill: '#4FA9FD',
+          emptyFill: '#26519A',
+          animation: { duration: 3000, easing: "circleProgressEasing" }
+        })
+        .on("circle-animation-progress", function (event, progress, stepValue) {
+          $(this)
+            .find(".percent")
+            .text(parseInt(stepValue * 100) + "%");
+        });
+        
+        circle.addClass("animated");
+      }
+    });
+    
+    // Function to check if an element is in the viewport
+    function isElementInViewport(el) {
+      var rect = el[0].getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  });
+  </script>
+
+  <script>
+  
+  $(document).ready(function() {
+    var circle = $(".circle4");
+    
+    $(window).on("scroll", function() {
+      if (isElementInViewport(circle) && !circle.hasClass("animated")) {
+        circle.circleProgress({
+          startAngle: -Math.PI / 2,
+          reverse: true,
+          value: 0.76,
+          size: 130,
+          lineCap: 'round',
+          thickness: 13,
+          fill: '#4FA9FD',
+          emptyFill: '#26519A',
+          animation: { duration: 3000, easing: "circleProgressEasing" }
+        })
+        .on("circle-animation-progress", function (event, progress, stepValue) {
+          $(this)
+            .find(".percent4")
+            .text(parseInt(stepValue * 100) + "%");
+        });
+        
+        circle.addClass("animated");
+      }
+    });
+    
+    // Function to check if an element is in the viewport
+    function isElementInViewport(el) {
+      var rect = el[0].getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  });
+    </script>
+
+    <script>
+  
+  $(document).ready(function() {
+    var circle = $(".circle2");
+    
+    $(window).on("scroll", function() {
+      if (isElementInViewport(circle) && !circle.hasClass("animated")) {
+        circle.circleProgress({
+          startAngle: -Math.PI / 2,
+          reverse: true,
+          value: 0.45,
+          size: 150,
+          lineCap: 'round',
+          thickness: 15,
+          fill: '#4FA9FD',
+          emptyFill: '#26519A',
+          animation: { duration: 3000, easing: "circleProgressEasing" }
+        })
+        .on("circle-animation-progress", function (event, progress, stepValue) {
+          $(this)
+            .find(".percent2")
+            .text(parseInt(stepValue * 100) + "%");
+        });
+        
+        circle.addClass("animated");
+      }
+    });
+    
+    // Function to check if an element is in the viewport
+    function isElementInViewport(el) {
+      var rect = el[0].getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  });
+    </script>
+
+    <script>
+  $(document).ready(function() {
+    var circle = $(".circle5");
+    
+    $(window).on("scroll", function() {
+      if (isElementInViewport(circle) && !circle.hasClass("animated")) {
+        circle.circleProgress({
+          startAngle: -Math.PI / 2,
+          reverse: true,
+          value: 0.45,
+          size: 130,
+          lineCap: 'round',
+          thickness: 13,
+          fill: '#4FA9FD',
+          emptyFill: '#26519A',
+          animation: { duration: 3000, easing: "circleProgressEasing" }
+        })
+        .on("circle-animation-progress", function (event, progress, stepValue) {
+          $(this)
+            .find(".percent5")
+            .text(parseInt(stepValue * 100) + "%");
+        });
+        
+        circle.addClass("animated");
+      }
+    });
+    </script>
+
+    <script>
+  
+    $(document).ready(function() {
+    var circle = $(".circle6");
+    
+    $(window).on("scroll", function() {
+      if (isElementInViewport(circle) && !circle.hasClass("animated")) {
+        circle.circleProgress({
+          startAngle: -Math.PI / 2,
+          reverse: true,
+          value: 0.45,
+          size: 130,
+          lineCap: 'round',
+          thickness: 13,
+          fill: '#4FA9FD',
+          emptyFill: '#26519A',
+          animation: { duration: 3000, easing: "circleProgressEasing" }
+        })
+        .on("circle-animation-progress", function (event, progress, stepValue) {
+          $(this)
+            .find(".percent6")
+            .text(parseInt(stepValue * 100) + "%");
+        });
+        
+        circle.addClass("animated");
+      }
+    });
+
+    // Function to check if an element is in the viewport
+    function isElementInViewport(el) {
+      var rect = el[0].getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  });
+
+  </script>
+
+  <script>
+  
+  $(document).ready(function() {
+    var circle = $(".circle3");
+    
+    $(window).on("scroll", function() {
+      if (isElementInViewport(circle) && !circle.hasClass("animated")) {
+        circle.circleProgress({
+          startAngle: -Math.PI / 2,
+          reverse: true,
+          value: 0.65,
+          size: 150,
+          lineCap: 'round',
+          thickness: 15,
+          fill: '#4FA9FD',
+          emptyFill: '#26519A',
+          animation: { duration: 3000, easing: "circleProgressEasing" }
+        })
+        .on("circle-animation-progress", function (event, progress, stepValue) {
+          $(this)
+            .find(".percent3")
+            .text(parseInt(stepValue * 100) + "%");
+        });
+        
+        circle.addClass("animated");
+      }
+    });
+    
+    // Function to check if an element is in the viewport
+    function isElementInViewport(el) {
+      var rect = el[0].getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  });
+  
+</script>
+  
